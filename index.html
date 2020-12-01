@@ -39,54 +39,47 @@
   </nav>
 </header>
 <!-- NOTE: when using a navbar w/ fixed-top, body must be given top padding or first part of page will be covered -->
-<body class="pt-5" style="background-color: #c7c8c9;">
-  <div class="container text-center my-3">
-    <h1>Phil Prater</h1>
-    <img src="img\mr_meseeks_lantern.jpg" alt="A pumpkin I carved." style="width:200px">
-    <p class="my-1">Hi! This is my first site.</p>
-    <!-- blank space for first scrolling tests -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<body class="py-5" style="background-color: #c7c8c9;">
+  <div class="container my-5">
+    
+    <!-- mx-auto centers card in container-->
+    <!-- TODO: work on mobile/narrow window image sizing -->
+    <!-- TODO: find why styling max height on card doesn't apply to image? -->
+    <div class="card mx-auto" style="max-width: 900px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="img\mr_meseeks_lantern.jpg" class="img-fluid" alt="A pumpkin I carved.">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h1>Phil Prater</h1>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
   
   <!-- Option 1: Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
 </body>
 <!-- <footer class="fixed-bottom"> -->
-  <footer>
-    <div class="container-fluid bg-dark">
-      <!-- font awesome social icon links -->
-      <ul class="nav justify-content-center p-2">
-        <li class="mx-1">
-          <a href="https://github.com/Blergborg">
-            <i class="fab fa-github fa-3x"></i>
-          </a>
-        </li>
-        <li class="mx-1">
-          <a href="#">
-            <i class="fab fa-linkedin fa-3x"></i>
-          </a>
-        </li>
-      </ul>
-    </div>  
-  </footer>
+<footer class="fixed-bottom">
+  <div class="container-fluid bg-dark">
+    <!-- font awesome social icon links -->
+    <ul class="nav justify-content-center p-2">
+      <li class="mx-1">
+        <a href="https://github.com/Blergborg">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </li>
+      <li class="mx-1">
+        <a href="#">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>  
+</footer>
 </html>
