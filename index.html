@@ -16,7 +16,7 @@
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
 </head>
-<header>
+<header class="fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <!-- Logo -->
@@ -37,30 +37,55 @@
     </div>
   </nav>
 </header>
-<body>
+<!-- NOTE: when using a navbar w/ fixed-top, body must be given top padding or first part of page will be covered -->
+<body class="pt-5" style="background-color: #c7c8c9;">
   <div class="container text-center my-3">
     <h1>Phil Prater</h1>
     <img src="img\mr_meseeks_lantern.jpg" alt="A pumpkin I carved." style="width:200px">
     <p class="my-1">Hi! This is my first site.</p>
+    <!-- blank space for first scrolling tests -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </div>
-  <div class="container">
-    <!-- font awesome social icon links -->
-     <ul class="nav justify-content-center">
-      <li class="mx-1">
-        <a href="https://github.com/Blergborg">
-          <i class="fab fa-github fa-3x"></i>
-        </a>
-      </li>
-      <li class="mx-1">
-        <a href="#">
-          <i class="fab fa-linkedin fa-3x"></i>
-        </a>
-      </li>
-    </ul>
-  </div>  
-
-
+  
   <!-- Option 1: Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
 </body>
+<!-- <footer class="fixed-bottom"> -->
+  <footer>
+    <div class="container-fluid bg-dark">
+      <!-- font awesome social icon links -->
+      <ul class="nav justify-content-center p-2">
+        <li class="mx-1">
+          <a href="https://github.com/Blergborg">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </li>
+        <li class="mx-1">
+          <a href="#">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </footer>
 </html>

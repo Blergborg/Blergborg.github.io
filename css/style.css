@@ -1,9 +1,9 @@
-body {
+/* body {
   background-color: rgb(97, 212, 207);
-}
+} */
 
 i {
-  color: rgb(194, 137, 115);
+  color: #419a1c;
 }
 i:hover {
   opacity: 0.8;
