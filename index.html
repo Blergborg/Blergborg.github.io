@@ -28,58 +28,85 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Nav links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">About Me</a>
-          <a class="nav-link" href="#">Projects</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <!-- Dropdown menus need a wrapping element to make positioning work right -->
+          <!-- So navbar-nav needed to be changed to an unordered list tag & all links needed to be wrapped with list item tags of class nav-item -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Python</a></li>
+              <li><a class="dropdown-item" href="#">Java</a></li>
+              <li><a class="dropdown-item" href="#">Flutter</a></li>
+            </ul>
+          </li>
+
+        </ul>
       </div>
     </div>
   </nav>
 </header>
+
 <!-- NOTE: when using a navbar w/ fixed-top, body must be given top padding or first part of page will be covered -->
-<body class="py-5" style="background-color: #c7c8c9;">
-  <div class="container my-5">
-    
-    <!-- mx-auto centers card in container-->
-    <!-- TODO: work on mobile/narrow window image sizing -->
-    <!-- TODO: find why styling max height on card doesn't apply to image? -->
-    <div class="card mx-auto" style="max-width: 900px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="img\mr_meseeks_lantern.jpg" class="img-fluid" alt="A pumpkin I carved.">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h1>Phil Prater</h1>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.</p>
+<body class="pt-5" style="background-color: #c7c8c9;">
+  <!-- trying page contaner and content-wrap divs to fix footer positioning -->
+  <div id="page-container">
+    <div id=content-wrap>
+      <div class="container my-5">
+        <!-- mx-auto centers card in container-->
+        <!-- TODO: work on mobile/narrow window image sizing -->
+        <!-- TODO: find why styling max height on card doesn't apply to image? -->
+        <div class="card mx-auto" style="max-width: 900px;">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="img\ok_profile_2.jpg" class="img-fluid rounded-3 mx-auto mt-3 d-block" alt="Me outside" style="max-width: 200px; max-height: 200px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-header">Phil Prater</h1>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <footer id="footer">
+        <div class="container-fluid bg-dark">
+          <!-- font awesome social icon links -->
+          <ul class="nav justify-content-center">
+            <li class="nav-item p-1">
+              <a href="https://github.com/Blergborg">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+            </li>
+            <li class="nav-item p-1">
+              <a href="#">
+                <i class="fab fa-linkedin fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>  
+      </footer>
     </div>
-    
   </div>
-  
+
   <!-- Option 1: Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
 </body>
-<!-- <footer class="fixed-bottom"> -->
-<footer class="fixed-bottom">
-  <div class="container-fluid bg-dark">
-    <!-- font awesome social icon links -->
-    <ul class="nav justify-content-center p-2">
-      <li class="mx-1">
-        <a href="https://github.com/Blergborg">
-          <i class="fab fa-github fa-3x"></i>
-        </a>
-      </li>
-      <li class="mx-1">
-        <a href="#">
-          <i class="fab fa-linkedin fa-3x"></i>
-        </a>
-      </li>
-    </ul>
-  </div>  
-</footer>
+
+
 </html>

@@ -2,6 +2,21 @@
   background-color: rgb(97, 212, 207);
 } */
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 3rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
 i {
   color: #419a1c;
 }
