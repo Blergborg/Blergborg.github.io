@@ -60,52 +60,73 @@
 <!-- NOTE: when using a navbar w/ fixed-top, body must be given top padding or first part of page will be covered -->
 <body class="pt-5" style="background-color: #c7c8c9;">
   <!-- trying page contaner and content-wrap divs to fix footer positioning -->
-  <div id="page-container">
-    <div id=content-wrap>
-      <div class="container my-5">
+  <!-- <div id="page-container" class="container-fluid"> -->
+    <!-- <div id=content-wrap> -->
+      <!-- <div class="container my-5"> -->
         <!-- mx-auto centers card in container-->
         <!-- TODO: work on mobile/narrow window image sizing -->
         <!-- TODO: find why styling max height on card doesn't apply to image? -->
-        <div class="card mx-auto" style="max-width: 900px;">
+        <div class="card m-5">
+          <!-- mx-auto" style="max-width: 900px; -->
           <div class="row">
             <div class="col-md-4">
-              <img src="img\ok_profile_2.jpg" class="img-fluid rounded-3 mx-auto mt-3 d-block" alt="Me outside" style="max-width: 200px; max-height: 200px;">
+              <img src="img\ok_profile_2.jpg" class="img-fluid rounded-3  alt="Me outside"> 
+              <!-- mx-auto mt-3 d-block" -->
+              <!-- style="max-width: 200px; max-height: 200px;"> -->
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h1 class="card-header">Phil Prater</h1>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
-                </p>
-              </div>
+            <div class="card-body col-md-8">
+              <h1 class="card-header">Phil Prater</h1>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque recusandae eum ipsum incidunt similique, repellat laboriosam alias, atque cupiditate corrupti nesciunt perspiciatis iure molestias, aut explicabo necessitatibus. Vitae, adipisci.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <h2 id="projects-header">Projects</h2>
+        <br></br>
+        <h4 id="spellbook">Spellbook</h4>
+        <img class="img-thumbnail project-img" src="img/Spellbook-5-screenshot.jpg" alt="Spellbook-5 preview">
+        <p>A spell casting assistant for Dungeons & Dragons</p>
+        <a href="https://spellbook-5.herokuapp.com/" target="_blank">See for your self</a>
+        <br></br>
+        <h4 id="brew_notes">Brew Notes</h4>
+        <div class="row">
+          <img src="img/BN_home.jpg" class="col-sm project-img" alt="BN home page">
+          <img src="img/BN_add_recipe.jpg" class="col-sm project-img" alt="BN add recipe">
+          <img src="img/BN_recipe_details.jpg" class="col-sm project-img" alt="BN recipe page">
+          <img src="img/BN_add_ingredient.jpg" class="col-sm project-img" alt="BN add ingredient">
+          <img src="img/BN_attempt_details.jpg" class="col-sm project-img" alt="BN attempt page">
+        </div>
+        <br></br>
+        <p>A mobile app for writing and keeping track of homebrew recipes</p>
+        <a href="https://github.com/Blergborg/brew_notes">Check it out</a>
+        <br></br>
+      <!-- </div> -->
+    <!-- </div> -->
     <footer id="footer">
       <div class="container-fluid bg-dark">
         <!-- font awesome social icon links -->
         <ul class="nav justify-content-center">
           <li class="nav-item p-1">
-            <a href="https://github.com/Blergborg">
+            <a href="https://github.com/Blergborg" target="_blank">
               <i class="fab fa-github fa-3x"></i>
             </a>
           </li>
           <li class="nav-item p-1">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/philipprater/" target="_blank">
               <i class="fab fa-linkedin fa-3x"></i>
             </a>
           </li>
         </ul>
       </div>  
     </footer>
-  </div>
+  <!-- </div> -->
 
   <!-- Option 1: Bootstrap Bundle with Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
