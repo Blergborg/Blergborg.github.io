@@ -40,19 +40,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <!-- Dropdown menus need a wrapping element to make positioning work right -->
-          <!-- So navbar-nav needed to be changed to an unordered list tag & all links needed to be wrapped with list item tags of class nav-item -->
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Python</a></li>
-              <li><a class="dropdown-item" href="#">Java</a></li>
-              <li><a class="dropdown-item" href="#">Flutter</a></li>
-            </ul>
-          </li> -->
 
         </ul>
       </div>
@@ -62,20 +49,10 @@
 
 <!-- NOTE: when using a navbar w/ fixed-top, body must be given top padding or first part of page will be covered -->
 <body class="pt-5" style="background-color: #c7c8c9;">
-  <!-- trying page contaner and content-wrap divs to fix footer positioning -->
-  <!-- <div id="page-container" class="container-fluid"> -->
-    <!-- <div id=content-wrap> -->
-      <!-- <div class="container my-5"> -->
-        <!-- mx-auto centers card in container-->
-        <!-- TODO: work on mobile/narrow window image sizing -->
-        <!-- TODO: find why styling max height on card doesn't apply to image? -->
         <div id="card" class="card m-5">
-          <!-- mx-auto" style="max-width: 900px; -->
           <div class="row">
             <div class="col-md-4">
               <img src="img\ok_profile_2.jpg" class="img-fluid rounded-3  alt="Me outside"> 
-              <!-- mx-auto mt-3 d-block" -->
-              <!-- style="max-width: 200px; max-height: 200px;"> -->
             </div>
             <div class="card-body col-md-8">
               <h1 class="card-header">Phil Prater</h1>
@@ -97,7 +74,8 @@
           <h4 id="spellbook">Spellbook</h4>
           <img class="img-thumbnail project-img" src="img/Spellbook-5-screenshot.jpg" alt="Spellbook-5 preview" style="max-width: 400px;">
           <p>A spell casting assistant for Dungeons & Dragons</p>
-          <a href="https://spellbook-5.herokuapp.com/" target="_blank">See for your self</a>
+          <p>(Typescript, React, Material-UI, Heroku)</p>
+          <p><a href="https://spellbook-5.herokuapp.com/" target="_blank">See for your self</a> (might take a sec to start)</p>
           <br></br>
           <h4 id="brew_notes">Brew Notes</h4>
           <div class="row">
@@ -109,11 +87,10 @@
           </div>
           <br></br>
           <p>A mobile app for writing and keeping track of homebrew recipes</p>
+          <p>(Flutter)</p>
           <a href="https://github.com/Blergborg/brew_notes">Check it out</a>
           <br></br>
         </div>
-      <!-- </div> -->
-    <!-- </div> -->
     <footer id="footer">
       <div class="container-fluid bg-dark">
         <!-- font awesome social icon links -->
@@ -131,7 +108,6 @@
         </ul>
       </div>  
     </footer>
-  <!-- </div> -->
 
   <!-- Option 1: Bootstrap Bundle with Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
