@@ -22,8 +22,9 @@ i:hover {
 }
 
 img.project-img {
-  max-width: auto;
+  max-width: 250px;
   max-height: 25rem;
+  margin-bottom: 10px;
 }
 
 #page-container {
