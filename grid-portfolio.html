@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phil Prater</title>
+
+  <!-- google fonts: Permanent Marker, Fira Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Fira Sans&display=swap" rel="stylesheet"> 
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/grid-portfolio.css">
+</head>
+
+<body>
+  <header>
+    <!-- <h1 class="logo">Logo</h1> -->
+    <img class="logo" src="static/img/PhilLogo.png" alt="logo">
+
+    <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./static/Philip Prater Resume SE.pdf" target="_blank" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <label for="navbar-toggle" class="navbar-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+  <section class="welcome">
+    <div class="welcome-text">
+      <h1>Welcome to my <span>Portfolio</span></h1>
+    </div>
+  </section>
+
+  <!-- <div class="welcome-left">
+    </div>
+    <div class="welcome-middle">
+      <h2>Making it happen</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt odio provident adipisci aperiam. Minima, cum delectus aspernatur expedita, porro consectetur id deleniti recusandae eveniet rerum, voluptatibus quibusdam modi laboriosam accusamus.</p>
+    </div>
+    <div class="welcome-right">
+      <img src="" alt="another generic description">
+    </div> -->
+
+  <section class="about-me">
+    <img class="about-img" src="./static/img/ok_profile_2.jpg" alt="picture of Phil">
+    <div class = "about-text-container">
+      <h1 class="about-title">Phil Prater</h1>
+      <h2 class="about-subtitle"></h2>
+      <div class="about-text">
+        <p>
+          Scientist turned Software Engineer. 
+          What I liked about chemistry was the process of digging into the details of a problem and turning what I found into something real that people could use. 
+          In software I can still do this, but the ability to try new solutions and get creative with experimentation is more readily available.
+          I love it.
+        </p>
+          <h3 style="font-family: var(--ff-primary)">Languages and Tools I've worked with:</h3>
+        <ul style="padding: 0;">
+          <li>C, C++, Java</li>
+          <li>Python, Flask, Pandas/ Numpy/ Matplotlib</li>
+          <li>Javascript, TypeScript, Node.js, React, Mocha, HTML, CSS</li>
+          <li>Dart/Flutter</li>
+          <li>SQL, PostgreSQL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h1>My Work</h1>
+
+    <div class="portfolio-cards">
+      <div class="box">
+        <div class="imgbox">
+          <img src="static\img\Spellbook-5-screenshot.jpg" alt="spellbook 5th edition web app">
+        </div>
+        <article>
+          <h2>Spellbook</h2>
+          <p>
+            A quick-reference web app for spellcasters in 5th edition Dungeons and Dragons.
+            (Allow 15-30 sec to spin up.)
+          </p>
+          <p>Tech: React, TypeScript, Material UI, Heroku</p>
+          <span>
+            <a href="https://github.com/Blergborg/spell-manager" target="_blank">GitHub</a>
+            <a href="https://spellbook-5.herokuapp.com/" target="_blank">Live Site</a>
+          </span>
+        </article>
+      </div>
+
+      <div class="box">
+        <div class="imgbox">
+          <img src="static\img\BN_attempt_details.jpg" alt="brewing mobile app">
+        </div>
+        <article>
+          <h2>Brew Notes</h2>
+          <p>Android app for keeping track of and documenting homebrew beer, cider, etc.</p>
+          <p>Tech: Dart/Flutter, Android</p>
+          <span>
+            <a href="https://github.com/Blergborg/brew_notes" target="_blank">GitHub</a>
+          </span>
+        </article>  
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1>Contact me</h1>
+    <form action="https://formsubmit.co/8bb3432599354d3107c7afa007f6fbf7" method="POST">
+      <label class="name">Name:
+        <input type="text" name="name" id="name" required>
+      </label>
+
+      <label class="email">Email:
+        <input type=""name="email" id="email" required>
+      </label>
+
+      <label message="message">Message:
+        <textarea name="message" id="message""></textarea>
+      </label>
+
+      <input class="send-btn" type="submit" value="SEND">
+    </form>
+  </section>
+
+  <footer>
+    <p class="footer-label">Check me out</p>
+    <div class="social-list">
+      <a href="https://github.com/Blergborg" target="_blank" class="social-link">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://linkedin.com/in/philipprater" target="_blank" class="social-link">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+    <span class="copyright">&copy; 2021 Phil Prater</span>
+    <span>Created my free logo at <a href="https://logomakr.com/" target="_blank">LogoMakr.com</a></span>
+  </footer>
+
+</body>
+</html>
